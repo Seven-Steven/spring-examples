@@ -16,4 +16,7 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <modules>
+        <module>spring-boot-starter-web-example</module>
+    </modules>
 </project>
