@@ -5,3 +5,4 @@
 ## 模块简介
 
 - spring-boot-starter-web-example: spring-boot-starter-web 简单使用示例
+- dockerfile-maven-plugin-example: docker-maven-plugin 使用示例
