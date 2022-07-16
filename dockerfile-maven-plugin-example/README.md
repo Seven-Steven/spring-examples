@@ -95,6 +95,14 @@
 
 ![dockerfile-maven-plugin-build-log](https://newbucket.s3.ladydaily.com/2022/a08fbe9792b7cbd4bd46b61b30ab45af.png)
 
+5. 跳过镜像构建
+
+如果前面在 pom.xml 插件配置中绑定了在 maven 阶段自动构建 docker 镜像，但是某次打包过程中又不希望自动构建 docker 镜像，可以通过 `dockerfile.skip` 参数跳过 docker 镜像构建。
+
+```shell
+mvn clean install -Ddockerfile.skip
+```
+
 ## 后记
 
 1. 个人不推荐在 pom.xml 中配置 Dockerfile 的各项内容，有种配置侵入的感觉，建议另写一个 Dockerfile 文件；
